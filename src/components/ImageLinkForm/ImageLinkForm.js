@@ -8,8 +8,10 @@ const ImageLinkForm = () => {
             </p>
             <div>
                 <div className="form pa4 ma1 br2 shadow-5 w-80 center">
-                    <input className="f4 pa2 w-80 center" type="text" name="" id="" />
-                    <button className="w-20 grow f4 link ph3 pv2 dib white bg-light-purple">Detect</button>
+                    <form action="" method="post">
+                    <input className="f4 pa2 w-80 center" type="url" name="" id="" required/>
+                    <input type='submit' value={'Detect'} className="w-20 grow f4 link ph3 pv2 dib white bg-light-purple" />
+                    </form>
                 </div>
             </div>
         </div>
