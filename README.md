@@ -1,3 +1,37 @@
+<p align="center">
+  <a href="#">
+    
+  </a>
+  <p align="center">
+   <img width="150" height="150" src="https://github.com/Abhay2342/react-face-detector/blob/master/src/components/Logo/Logo.png" alt="Logo">
+  </p>
+  <h1 align="center"><b>React Face Detector</b></h1>
+  <p align="center">
+    <a href="https://abhay2342.github.io/react-face-detector/"><strong>React-Face-Detector »</strong></a>
+  </p>
+</p>
+
+<p align="center">
+  
+  <img src="https://github.com/Abhay2342/react-face-detector/blob/master/public/react-face-detector.jpg">
+  
+  <br />
+  <br />
+  <a href="https://twitter.com/Abhay2342">
+    <img src="https://img.shields.io/badge/Twitter-00acee?logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://www.instagram.com/abhay_suryawanshi_2342/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://www.facebook.com/AbhayS.2342/">
+    <img src="https://img.shields.io/badge/Facebook-4440e4?logo=facebook&logoColor=white" />
+  </a>
+  <a href="https://github.com/Abhay2342">
+    <img src="https://img.shields.io/badge/Github-Link-brightgreen" />
+  </a>
+  <br />
+</p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
