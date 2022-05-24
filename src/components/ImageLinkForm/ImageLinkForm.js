@@ -5,6 +5,10 @@ const ImageLinkForm = ({onInputChange, onButtonSubmit}) => {
         <div>
             <p className="f3 b">
                 {'This Application will detect faces from images using web API.'}
+                
+            </p>
+            <p>
+            {'Sample Img: https://images.pexels.com/photos/2787341/pexels-photo-2787341.jpeg'}
             </p>
             <div>
                 <div className="form pa4 ma1 br2 shadow-5 w-80 center">
