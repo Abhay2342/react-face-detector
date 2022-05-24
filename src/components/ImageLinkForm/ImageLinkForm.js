@@ -3,11 +3,11 @@ import './ImageLinkForm.css';
 const ImageLinkForm = ({onInputChange, onButtonSubmit}) => {
     return (
         <div>
-            <p className="f3 b">
+            <p className="f3 b white">
                 {'This Application will detect faces from images using web API.'}
                 
             </p>
-            <p>
+            <p className="white">
             {'Sample Img: https://images.pexels.com/photos/2787341/pexels-photo-2787341.jpeg'}
             </p>
             <div>
