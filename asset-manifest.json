@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-face-detector/static/css/main.f67b74bd.css",
-    "main.js": "/react-face-detector/static/js/main.20922f8a.js",
+    "main.css": "/react-face-detector/static/css/main.4b2c2778.css",
+    "main.js": "/react-face-detector/static/js/main.b2d839ae.js",
     "static/js/937.57057a3a.chunk.js": "/react-face-detector/static/js/937.57057a3a.chunk.js",
     "static/js/787.6a5c03b2.chunk.js": "/react-face-detector/static/js/787.6a5c03b2.chunk.js",
     "static/media/Logo.png": "/react-face-detector/static/media/Logo.d88f13b5864f24238baf.png",
     "index.html": "/react-face-detector/index.html",
-    "main.f67b74bd.css.map": "/react-face-detector/static/css/main.f67b74bd.css.map",
-    "main.20922f8a.js.map": "/react-face-detector/static/js/main.20922f8a.js.map",
+    "main.4b2c2778.css.map": "/react-face-detector/static/css/main.4b2c2778.css.map",
+    "main.b2d839ae.js.map": "/react-face-detector/static/js/main.b2d839ae.js.map",
     "937.57057a3a.chunk.js.map": "/react-face-detector/static/js/937.57057a3a.chunk.js.map",
     "787.6a5c03b2.chunk.js.map": "/react-face-detector/static/js/787.6a5c03b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f67b74bd.css",
-    "static/js/main.20922f8a.js"
+    "static/css/main.4b2c2778.css",
+    "static/js/main.b2d839ae.js"
   ]
 }
