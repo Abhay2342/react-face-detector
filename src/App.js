@@ -131,13 +131,28 @@ class App extends Component {
     this.setState({ input: event.target.value });
   }
 
-  onButtonSubmit = () => {
+  onImageSubmit = () => {
     this.setState({ imageUrl: this.state.input });
     const requestOptions = this.apiData();
     fetch("https://api.clarifai.com/v2/models/" + MODEL_ID + "/versions/" + MODEL_VERSION_ID + "/outputs", requestOptions)
       .then(response => response.text())
       .then(result => JSON.parse(result))
-      .then(obj => this.displayFaceBox(this.calculateFaceLocation(obj)))
+      .then(obj => {
+        if (obj) {
+          fetch('http://localhost:3000/image', {
+            method: 'put',
+            headers: {'content-type': 'application/json'},
+            body: JSON.stringify({
+                id: this.state.user.id
+            })
+          })
+          .then(response => response.json())
+          .then(count => {
+            this.setState(Object.assign(this.state.user, {entries: count}))
+          })
+        }
+        this.displayFaceBox(this.calculateFaceLocation(obj))
+      })
       .catch(error => console.log('error', error));
   }
 
@@ -152,7 +167,7 @@ class App extends Component {
   }
 
   render() {
-    const { isSignedIn, imageUrl, route, box } = this.state;
+    const { isSignedIn, imageUrl, route, box, user } = this.state;
     return (
       <div className="App">
         <Particles className='particles'
@@ -163,16 +178,16 @@ class App extends Component {
         {route === 'home'
           ? <div>
             <Logo />
-            <Rank />
+            <Rank name= {user.name} entries= {user.entries}/>
             <ImageLinkForm
               onInputChange={this.onInputChange}
-              onButtonSubmit={this.onButtonSubmit}
+              onImageSubmit={this.onImageSubmit}
             />
             <FaceDetector box={box} imageUrl={imageUrl} />
           </div>
           : (
             (this.state.route === 'signin' || this.state.route === 'signout')
-              ? <SignIn onRouteChange={this.onRouteChange} />
+              ? <SignIn onRouteChange={this.onRouteChange} loadUser = {this.loadUser}/>
               : <Register onRouteChange={this.onRouteChange}  loadUser = {this.loadUser}/>
           )
 
